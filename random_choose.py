@@ -18,14 +18,14 @@ def listDir(dirName,fileNum,dstDir):
 
     for i,pathname in enumerate(imgList):
         copy(pathname,dstDir)
-        if(1%1000==0):
+        if(i%1000==0):
             print("完成{:.2f}%",i*100/fileNum)
     
     for i,pathname in enumerate(xmlList):
         copy(pathname,dstDir)
-        if(1%1000==0):
+        if(i%1000==0):
             print("完成{:.2f}%",i*100/fileNum)
 
-listDir('g:/data_train_202001-202008/fake_image/',5000,'g:/data_train_small/fake_image/')
-listDir('g:/data_train_202001-202008/normal_image/',5000,'g:/data_train_small/normal_image/')
+listDir('g:/data_train_202001-202106/fake_image/',200000,'g:/data_train/fake_image/')
+listDir('g:/data_train_202001-202106/normal_image/',200000,'g:/data_train/normal_image/')
 

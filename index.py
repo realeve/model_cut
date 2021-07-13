@@ -41,7 +41,7 @@ def multiThread(filelist,filetype):
     
     for item in threads:
         item.join()
-    print('exit main thread')
+    print('所有线程处理完成')
 
 def handleDir(filetype = 'fake_image'):        
 
@@ -88,9 +88,9 @@ def handleTxtList(url):
     # handleFilelist(['fake_image\\131_1_2075H359_1225'])
     handleFilelist(data)
         
-# handleDir('fake_image')
+handleDir('fake_image')
 
-handleDir('normal_image')
+# handleDir('normal_image')
 
 # handleTxtList('g:\\data_202009-202104\\append.txt')
 

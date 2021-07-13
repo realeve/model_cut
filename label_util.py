@@ -16,7 +16,7 @@ handleimgType = "fake_image"
 CROP_IMG_SIZE = 112
 
 FAKE_IMG_DIR = 'g:\\data\\'
-OUTPUT_DIR = 'g:\\data_train_202009-202105\\'
+OUTPUT_DIR = 'g:\\data_train_202001-202106\\'
 
 
 # FAKE_IMG_DIR = 'g:\\test2\\'+handleimgType+'\\'
