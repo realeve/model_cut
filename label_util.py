@@ -11,12 +11,12 @@ from PIL import Image
 img_width = 180
 img_height = 120
 
-handleimgType = "fake_image"
+# handleimgType = "fake_image"
 
 CROP_IMG_SIZE = 112
 
-FAKE_IMG_DIR = 'g:\\data\\'
-OUTPUT_DIR = 'g:\\data_train_202001-202106\\'
+FAKE_IMG_DIR = 'g:\\data_2018\\'
+OUTPUT_DIR = 'g:\\data_train_2018\\'
 
 
 # FAKE_IMG_DIR = 'g:\\test2\\'+handleimgType+'\\'
