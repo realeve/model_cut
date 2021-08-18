@@ -15,12 +15,6 @@ img_height = 120
 
 CROP_IMG_SIZE = 112
 
-FAKE_IMG_DIR = 'g:\\data_2018\\'
-OUTPUT_DIR = 'g:\\data_train_2018\\'
-
-
-# FAKE_IMG_DIR = 'g:\\test2\\'+handleimgType+'\\'
-# OUTPUT_DIR = 'g:\\test3\\'+handleimgType+'\\'
 
 def flip180(url):
     im = Image.open(url)
@@ -291,7 +285,7 @@ def autoCrop(img_rgb, xml_url, xml_output_url):
     return dst_img, (x1, y1, x2, y2),croptype
 
 
-def matchModel(tmp_filename,filetype='fake_image'):
+def matchModel(tmp_filename,FAKE_IMG_DIR,OUTPUT_DIR,filetype='fake_image',):
     img_url = FAKE_IMG_DIR+filetype+'\\'+tmp_filename+'.bmp'
     xml_url = img_url.replace('.bmp','.xml')
     
